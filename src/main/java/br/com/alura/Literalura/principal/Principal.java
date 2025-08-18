@@ -83,7 +83,7 @@ public class Principal {
         }
     }
 
-    //Lista TODOS OS LIVROS NO IDIOMA ESPECIFICADO PELO USUÁRIO
+
     private void LivroNoIdioma() {
         System.out.println("-> Informe o Idioma do livro, opções conforme abaixo, para a Pesquisa: ");
         System.out.println("     EN (Inglês) - ES (espanhol) - FR (francês) ou PT (português) ");
@@ -98,7 +98,7 @@ public class Principal {
         }
     }
 
-    //Lista TODOS OS AUTORES VIVOS no Ano especificado pelo usuário
+
     private void AutoresVivosNesteAno() {
         System.out.print("-> Informe o Ano Para a Pesquisa: ");
         var ano = imput.nextInt();
@@ -116,7 +116,7 @@ public class Principal {
     }
 
 
-    //Lista todos os autores Registrados no Banco de Dados
+
     private void listaAutoresRegistrados() {
         List<Autor> autores = autorRepositorio.findAll();
 
@@ -128,7 +128,7 @@ public class Principal {
         }
     }
 
-    //Lista todos os livros registrados no Banco de Dados
+
     private void listaLivrosRegistrados() {
         Livro livro;
         List<Livro> livrosBD = livrosRepositorio.findAll();
@@ -143,7 +143,7 @@ public class Principal {
         }
     }
 
-    //Busca livro na API, especificado pelo usuário, e grava no Banco de Dados
+
     private void buscarLivroPorTitulo() {
         System.out.print("   -> Qual o Nome do Livro para Busca: ");
         String nomeLivro = imput.nextLine();
