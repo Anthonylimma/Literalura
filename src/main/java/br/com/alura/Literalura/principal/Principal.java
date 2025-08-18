@@ -162,7 +162,7 @@ public class Principal {
         }
     }
 
-    //Transferindo as informações do livro e autor da API para as entidades
+
     private Livro AtribuindoLivroDTOParaEntity(LivroDTO livrosDaAPI) {
         if (livrosDaAPI.autor().isEmpty()) {
             throw new RuntimeException("\n    <--- O LIVRO DEVE CONTER UM AUTOR, NO MÍNIMO ! --->");
